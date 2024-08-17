@@ -1,0 +1,333 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin:0;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem; 
+    margin-right: 0.5rem;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem; 
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    opacity: 0.5;
+    color: #B3B3B3;
+    size: 2rem;
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+    color: white; 
+    translate: all 0.5s;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    color: #B3B3B3;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.library{
+    height: 100%;
+    margin-top: 0.75rem;
+    background-color: #121212;
+    border-radius: 1rem;
+    
+}
+.options{
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-options{
+    opacity: 0.6;
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+.lib-options a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+}
+.lib-options:hover{
+    opacity: 1;
+}
+.lib-icons{
+    
+    
+    font-size: 1.25rem;
+    display: flex;
+    
+}
+.lib-icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.lib-icons i:hover{
+    opacity: 1;
+    color: white;
+}
+
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin:0.75rem 0 0.75rem 0;
+    padding: 0.75rem 1rem;
+    
+}
+.p1{
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+.p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    margin-top:0.5rem;
+    height: 2rem;
+    width: fit-content;
+    transition: all 0.5s;
+}
+.badge:hover{
+    
+    transform: scale(1.1);
+}
+.main-content{
+    padding: 0 1.5rem 0 1.5rem;
+    background-color: #121212;
+    flex:1;
+    border-radius: 1rem; 
+    overflow:auto; /*jab jrurat hogi tb scroll bar dikhai dega*/
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons{
+margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+.nav-item{
+    margin: 1rem;
+}
+
+.card{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    width: 150px;
+    transition: all 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.cards-container{
+    display: flex;
+   flex-wrap: wrap;
+}
+.card-image{
+    
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.footer{
+
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    opacity: 0.3;
+    border-top: 2px solid white;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-icons{
+    height: 1rem;
+    opacity: 0.6;
+    margin-right: 1.75rem; 
+    transition: all 0.5s;
+}
+.player-icons:hover{
+    opacity: 1;
+}
+.start-icon{
+    height: 2rem;
+    opacity:1;
+    transition: all 0.5s;
+}
+.start-icon:hover{
+    transform: scale(1.1);
+}
+.music-player{
+    
+    background-color: black;
+    display: flex;
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    height: 80px;
+}
+.album{
+    width: 25%;
+    
+}
+.player{
+    padding: 1rem;
+    
+    width: 50%;
+}
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.progress{
+    appearance: none;
+    
+    background-color: transparent;
+    cursor: pointer;
+    width: 70%;
+}
+.progress::-webkit-slider-runnable-track{
+background-color: #222;
+border-radius: 0.5rem;
+height: 0.5rem;
+}
+.progress::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-top: -3px;
+    background-color: #1bd760;
+    border-radius: 50%;
+}
+.controls{
+   
+    width: 25%;
+}
+.album img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+.album{
+    padding: 0.3rem;
+    display: flex;
+    
+}
+.song-name{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+.singer-name{
+    opacity: 0.6;
+    font-size: 0.7rem;
+}
+.artist{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.control-icon{
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+.control-icon:hover{
+    opacity: 1;
+}
+.control-bar{
+    background-color: transparent;
+    width: 25%;
+    appearance: none;
+    transition: all 0.2s;
+}
+
+.control-bar::-webkit-slider-runnable-track{
+   background-color: gray;
+   border-radius: 1rem;
+   height: 0.2rem;
+}
+.control-bar::-webkit-slider-runnable-track:hover{
+    background-color: #1bd760;
+   
+}
+.control-bar::-webkit-slider-thumb{
+    appearance: none;
+    
+}
